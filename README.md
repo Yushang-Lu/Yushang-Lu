@@ -1,4 +1,4 @@
-<img src="assets/hero-lab.svg" width="100%" alt="Technical atlas hero banner for Yushang Lu" />
+<img src="assets/hero-lab-sharp.svg" width="100%" alt="Technical atlas hero banner for Yushang Lu" />
 
 <br/>
 
