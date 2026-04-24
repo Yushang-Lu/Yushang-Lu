@@ -1,0 +1,37 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Commit and push generated snake
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add dist/
+          if [[ -n $(git status -s dist/) ]]; then
+            git commit -m "generated snake"
+            git pull --rebase
+            git push
+          else
+            echo "No snake changes to commit."
+          fi
