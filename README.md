@@ -24,9 +24,9 @@ This is my space for learning in public: code, experiments, coursework, and idea
 
 <a href="https://github.com/tandpfun/skill-icons">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c,cpp,py&amp;theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=c,cpp,py&amp;theme=light" />
-    <img src="https://skillicons.dev/icons?i=c,cpp,py&amp;theme=light" height="48" alt="C, C++, and Python" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpy&amp;theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpy&amp;theme=light" />
+    <img src="https://skillicons.dev/icons?i=c%2Ccpp%2Cpy&amp;theme=light" height="48" alt="C, C++, and Python" />
   </picture>
 </a>
 
